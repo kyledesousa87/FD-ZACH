@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b3b2d16-8be5-4cc9-b744-3c8949f84273" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/scssLintPlugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/modals/modal-complaints.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/modals/modal-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/modals/modal-guarantee.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/modals/modal-privacy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/modals/modal-terms.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/modals/modal-video.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_font.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/mixins/_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/mixins/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/mixins/mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +14,7 @@
     <session id="381463123">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="2" />
@@ -111,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scss/layout/_layout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="121" column="1" lean-forward="true" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
+            <state relative-caret-position="60">
+              <caret line="163" column="1" lean-forward="true" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
               <folding>
                 <element signature="e#6#1953#0" />
                 <element signature="e#111#171#0" />
@@ -345,12 +334,12 @@
       <workItem from="1545042850712" duration="2271000" />
       <workItem from="1545045468642" duration="96000" />
       <workItem from="1545045982346" duration="16983000" />
-      <workItem from="1545130706339" duration="9201000" />
+      <workItem from="1545130706339" duration="9961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28720000" />
+    <option name="totallyTimeSpent" value="29480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2532" y="-202" width="2560" height="1361" extended-state="0" />
@@ -570,8 +559,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/layout/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="121" column="1" lean-forward="true" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
+        <state relative-caret-position="60">
+          <caret line="163" column="1" lean-forward="true" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
           <folding>
             <element signature="e#6#1953#0" />
             <element signature="e#111#171#0" />
