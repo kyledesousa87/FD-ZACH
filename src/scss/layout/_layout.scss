@@ -1,0 +1,245 @@
+.hero {
+  display: flex;
+
+  flex-grow: 1;
+  height: 100%;
+  height: 100vh;
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    justify-content: stretch;
+  }
+  @include media-breakpoint-down(md) {
+    flex-direction: row;
+    justify-content: stretch;
+  }
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    justify-content: stretch;
+  }
+  @include media-breakpoint-down(xs) {
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  &-details {
+    @include media-breakpoint-up(lg) {
+      padding: 4% 10% 4% 4%;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 4% 10% 4% 4%;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 4% 10% 0 4%;
+    }
+    @include media-breakpoint-down(xs) {
+      padding: 4% 15px 0 15px;
+    }
+
+    @include bgImg('bg-beach', top left, cover, '', 'jpg' );
+    flex-basis: 50%;
+
+
+    .hero-txt-1 {
+      display: block;
+      width: 100%;
+      fill: white;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      padding-top: 15px;
+      font-family: $fontName;
+      font-weight: normal;
+      color: white;
+      font-size: 3vh;
+      margin-bottom: 22px;
+      span {
+        color: red;
+      }
+    }
+    p {
+      color: white;
+      font-weight: 300;
+      @include fluid-type(280px, 1600px, 16px, 20px);
+    }
+
+    .close-up {
+      transform: rotate(-6deg);
+    }
+
+  }
+  &-form {
+    background: #D9E7EA;
+    flex-basis: 50%;
+    align-items: center;
+
+    @include media-breakpoint-up(xl) {
+      padding: 10%;
+      display: flex;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 5% 5% 5% 10%;
+      display: flex;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 5% 0% 5% 10%;
+      display: flex;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 5% 0% 5% 10%;
+      display: block;
+    }
+    @include media-breakpoint-down(xs) {
+      padding:3%;
+      display: block;
+    }
+
+    @include svgPngFb('text-bg');
+    background-size: cover;
+  }
+
+}
+
+.zach-img-mobi{
+
+  @include bgImg('zach',bottom center, contain, '', 'png');
+  width: 100%;
+  height: 380px;
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+  @include media-breakpoint-down(xs) {
+    display: block;
+  }
+
+}
+
+.zach-holder {
+  @include media-breakpoint-up(lg) {
+    display: flex;
+  }
+  @include media-breakpoint-down(md) {
+    display: flex;
+
+  }
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  width: 30%;
+  &-top {
+    display: flex;
+    height: 50%;
+    align-self: flex-start;
+    width: 100%;
+  }
+  &-bottom {
+    align-self: flex-end;
+    flex-grow: 1;
+    display: flex;
+    img {
+      align-self: flex-end;
+    }
+  }
+}
+
+.btn-play {
+
+
+
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: center;
+  flex-grow: 1;
+  align-items: center;
+  .btn-play-icon {
+    $circleSize:120px;
+    display: flex;
+    width: $circleSize;
+    height: $circleSize;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+
+    // ARROW ICON
+    span {
+      text-align: center;
+      @include svgPngFb('icon-play');
+      width: 41px;
+      height:44px;
+      display: block;
+      z-index: 8;
+      align-self: center;
+    }
+    // FIRST CIRCLE
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      display: block;
+      width: $circleSize * 1.5;
+      height: $circleSize * 1.5;
+      background: #ffffff;
+      border-radius: 50%;
+      animation: pulse-border 1500ms ease-out infinite;
+    }
+    // FIRST CIRCLE
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      display: block;
+      width: $circleSize;
+      height: $circleSize;
+      background: #ffffff;
+      border-radius: 50%;
+      transition: all 500ms;
+    }
+
+    &:hover {
+      background-color: darken($acc1, 20%);
+      cursor: pointer;
+    }
+
+  }
+
+  .btn-play-text {
+    margin-top: 20px;
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+    background: $acc2;
+    border-radius: 33px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,10 @@
+.play {
+  .btn {
+    background-color: red;
+    transform: translateX(70px);
+  }
+}
+
+.btn {
+  transition: transform 2s ease-in;
+}

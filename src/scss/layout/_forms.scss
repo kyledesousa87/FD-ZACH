@@ -1,0 +1,82 @@
+.contact-form {
+
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:  wrap;
+    margin:0 0 0 -.5rem; /* offset margin to the left and avoid horizontal scrollbar*/
+    .cf-col {
+      width: 100%;
+      flex-grow: 1;
+      margin:0 0 .5rem .5rem;
+      input {
+        width: 100%;
+        border-radius: 0;
+      }
+      &.half {
+        width: 47%;
+      }
+    }
+  }
+
+  .submit {
+
+    display: block;
+    background-color: $acc4;
+    border-radius: 3px !important;
+    padding: 10px 0;
+    font-weight: bold;
+    border: 0;
+    color: white;
+    font-size: 20px;
+
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+
+    &:hover {
+
+
+    }
+  }
+
+
+}
+
+.booking-form {
+  background-color: white;
+  box-shadow: 0 30px 75px rgba(0,0,0,.6);
+  z-index: 55;
+  position: relative;
+
+  &-hed {
+    margin: 0;
+    background-color: $acc2;
+    color: $white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    &:before, &:after {
+      z-index: 2;
+      position: absolute;
+      width: 20px;
+      height: 80px;
+      top: -20px;
+      display: block;
+      @include svgPngFb('calendar-clip');
+      content: '';
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &:before {
+      left: 40px;
+    }
+    &:after {
+      right: 40px;
+    }
+  }
+  &-body {
+    padding: 25px;
+    background-color: white;
+  }
+}
